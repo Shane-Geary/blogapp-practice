@@ -1,9 +1,7 @@
 import styles from '../styles/Home.module.css'
 
-export default function App() {
-    return (
-      <h1 className="text-6xl font-bold underline">
-        Hello world!
-      </h1>
-    )
-  }
+function MyApp({Component, pageProps}) {
+    return <Component {...pageProps} />
+}
+
+export default MyApp
